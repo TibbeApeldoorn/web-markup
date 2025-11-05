@@ -1,5 +1,5 @@
 Student name: Tibbe Apeldoorn
 Student number: 739868
 Student class: HAINF25VT1A
-GitHub Repository: your github repository URL
-GitHub Pages URL: your github pages URL
+GitHub Repository: https://github.com/TibbeApeldoorn/739868webmarkup
+GitHub Pages URL: https://tibbeapeldoorn.github.io/739868webmarkup/
