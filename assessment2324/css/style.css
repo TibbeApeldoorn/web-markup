@@ -1,0 +1,286 @@
+/* Header */
+.logo {
+  width: 12.5rem;
+  height: auto;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: auto repeat(5, max-content);
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: none;
+  height: 100%;
+}
+
+.button:hover {
+  background-color: #235D59;
+  color: white;
+}
+
+.button:active{
+  background-color:#FFA629;
+  color: white;
+}
+/* Responsive */
+
+
+/* banner homepage */
+.introtext {
+  background-color: #235D59;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  left: 0;
+  text-align: center;    
+}
+
+.bannerimg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+
+figure {
+  background-color: #235D59;
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+*{
+  letter-spacing: normal;
+  line-height: normal;
+  word-spacing: normal;
+}
+
+.line h1{
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.line{
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: center;             
+  gap: 2;                       
+}
+
+h1{
+  font-size: 2.5rem;
+  text-indent: .5rem;
+}
+
+.goto {
+  background-color: #235D59;
+  color: white;
+  padding: 5rem;
+  border-style: double;
+  border-width: .5rem;
+  border-color: #FFA629;
+  margin-top: 0.5rem;
+  margin: 2rem;   
+  width: 20rem;
+}
+
+.goto:hover {
+  background-color: #FFA629;
+  color: white;
+  border-color: #235D59
+}
+
+.linecontainer, .linecontainer2 {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.linecontainer2 {
+  background-color: #84BC9C;
+}
+
+.sideimgright, .sideimgleft {
+  width: 20rem;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sideimgright{
+  order: 2;
+}
+
+.sideimgleft{
+  order: 0;
+}
+
+.text, .goto, .introtext, .button {
+  font-size: 1.5rem;
+}
+
+h1, .goto{
+  font-weight: bold;
+}
+
+.button, .goto{
+  cursor: pointer;
+  text-align: center;
+}
+
+.toptext{
+  display: grid;
+  justify-items: center;
+  border-bottom: solid;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  font-size: 1rem;
+  text-align: center;
+  background-color:#FFA629;
+  padding: 1rem;
+  margin: 0;
+}
+
+
+/* contact form */
+.contact{
+  background-color: #84BC9C;
+  height: 100%;  
+}
+
+
+fieldset{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: .5rem;               
+  background-color: white;
+  padding: 1rem;
+  justify-self: center;
+  justify-items: start;
+  align-items: start;
+  border-style: dotted;
+  border-width: .5rem;
+  border-color:#84BC9C;
+}
+
+form h1{
+  justify-self: start;
+}
+
+textarea{
+  width: 100%;
+  height: 5rem; 
+}
+
+input:focus, textarea:focus{
+  background-color: #dcdcdc
+}
+
+/*locations*/
+.snippet-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.snippet {
+  background-color: #235D59;
+  color: white;
+  border-radius: 0.5rem;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.snippet-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+.snippet-text {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .snippet-container {
+    grid-template-columns: 1fr; 
+  }
+  .snippet-img {
+    height: 150px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navigation {
+    grid-template-columns: 1fr;  
+    text-align: center;
+  }
+  .button {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  .logo {
+    width: 8rem;
+  }
+
+  .bannerimg {
+    width: 100%;
+    height: auto;
+  }
+  .introtext {
+    font-size: 1.2rem;
+    padding: .5rem;
+  }
+  
+  .line, .linecontainer, .linecontainer2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+  .sideimgleft, .sideimgright {
+    width: 80%;
+    margin: 0 auto;
+    order: 3;
+    
+  }
+  .goto {
+    width: 80%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    order: 3;
+  }
+
+  form {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+}

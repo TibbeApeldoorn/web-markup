@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tibbe Apeldoorn">
+  <title>Flexplex - Contact</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <a href="home.html">
+        <img src="img/logo.png" alt="Flexplex logo" class="logo">
+      </a>
+      <button class="button" onclick="location.href='locaties.html'">Locaties</button>
+      <button class="button" onclick="location.href='voordelen.html'">Voordelen</button>
+      <button class="button" onclick="location.href='advies.html'">Advies</button>
+      <button class="button" onclick="location.href='gear.html'">Gear</button>
+      <button class="button" onclick="location.href='contact.html'">Contact</button>
+    </nav>
+  </header>
+
+  <main class="contact">
+   <fieldset> 
+    <form>
+      <fieldset>
+        <legend>Contact ons</legend>
+      
+      
+        <!--Aanhef-->   
+        <section class="gender">
+          <p>Aanhef</p>
+          <input type="radio" name="gender">
+          <label for="dhr">Dhr.</label>
+          <input type="radio" name="gender">
+          <label for="mevr">Mevr.</label>
+          <input type="radio" name="gender">
+          <label for="anders">Anders</label>
+        </section>
+      
+        <!--Info-->
+       <label for="name"><strong>Volledige Naam</strong></label required>
+       <input type="text" value="Naam" placeholder="Pietje Puk" required>
+       <label for="email"><strong>E-mailadress</strong></label>
+       <input type="email" value="email" placeholder="pietje.puk@voorbeeld.nl" required>
+       <label for="phone"><strong>Telefoonnummer</strong></label>
+       <input type="tel" value="Telefoonnummer" placeholder="01 23456789">
+      
+       <!--Bericht-->
+       <label for="message">Bericht</label required>
+       <textarea placeholder="Typ bericht hier..."></textarea>
+      
+       <!--Submit-->
+       <input type="submit" value="Verzend"></submit>
+      </fieldset>
+     
+    </form>
+  </main> 
+
+  <footer>
+    <p>
+      Author: Tibbe Apeldoorn - 
+      &copy; All rights reserved - 
+      <a href="mailto:739868@student.inholland.nl">739868@student.inholland.nl</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+
+
